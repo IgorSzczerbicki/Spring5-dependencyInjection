@@ -6,6 +6,9 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <!-- zaladowanie pliku data.properties -->
+    <context:property-placeholder location="classpath:data.properties"/>
 
     <!-- Define your beans here -->
    <bean id ="fortuneService"
@@ -22,6 +25,8 @@
    <property name= "fortuneService" ref = "fortuneService"/>
    <property name="email" value="coach@gmail.com"/>
    <property name="title" value= "Mr. Coach"/>
+   <property name="email2" value = "${foo.email2}" />
+   <property name="title2" value = "${foo.title2}" />
    </bean>   
    
 </beans>

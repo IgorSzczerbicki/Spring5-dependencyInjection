@@ -5,6 +5,8 @@ public class CricketCoach implements Coach {
 	private FortuneService fortuneService;
 	private String email;
 	private String title;
+	private String email2;
+	private String title2;
 	
 	public CricketCoach() {}
 	
@@ -29,6 +31,22 @@ public class CricketCoach implements Coach {
 	
 	public String getTitle() {
 		return title;
+	}
+	
+	public void setEmail2(String email2) {
+		this.email2 = email2;
+	}
+	
+	public String getEmail2() {
+		return email2;
+	}
+	
+	public void setTitle2(String title2) {
+		this.title2 = title2;
+	}
+	
+	public String getTitle2() {
+		return title2;
 	}
 
 	@Override

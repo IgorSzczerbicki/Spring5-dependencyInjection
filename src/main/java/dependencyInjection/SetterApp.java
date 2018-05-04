@@ -23,8 +23,13 @@ public class SetterApp {
 		//metoda pobieraj¹ca wstrzykniêty litera³
 		System.out.println(((CricketCoach) theCricketCoach).getTitle());
 		
+		//metoda pobieraj¹ca wstrzykniêty litera³ z pliku
+		System.out.println(((CricketCoach) theCricketCoach).getEmail2());
+		
+		//metoda pobieraj¹ca wstrzykniêty litera³ z pliku
+		System.out.println(((CricketCoach) theCricketCoach).getTitle2());
+		
 		//zamkniêcie kontekstu
 		context.close();
 	}
-
 }
