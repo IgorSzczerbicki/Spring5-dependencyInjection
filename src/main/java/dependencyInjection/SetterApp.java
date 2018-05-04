@@ -17,6 +17,12 @@ public class SetterApp {
 		//metoda wykorzystuj¹ca zale¿noœæ FortuneService
 		System.out.println(theCricketCoach.getDailyFortune());
 		
+		//metoda pobieraj¹ca wstrzykniêty litera³
+		System.out.println(((CricketCoach) theCricketCoach).getEmail());
+		
+		//metoda pobieraj¹ca wstrzykniêty litera³
+		System.out.println(((CricketCoach) theCricketCoach).getTitle());
+		
 		//zamkniêcie kontekstu
 		context.close();
 	}

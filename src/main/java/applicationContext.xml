@@ -20,6 +20,8 @@
    <bean id = "myCricketCoach"
    class = "dependencyInjection.CricketCoach">
    <property name= "fortuneService" ref = "fortuneService"/>
+   <property name="email" value="coach@gmail.com"/>
+   <property name="title" value= "Mr. Coach"/>
    </bean>   
    
 </beans>
